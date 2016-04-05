@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /db/
+Disallow: /config/
+Disallow: /log/
+Host: https://esrc-chita.ru

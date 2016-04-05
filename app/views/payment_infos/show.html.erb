@@ -1,0 +1,13 @@
+<% provide(:title, 'Информация о выплатах') %>
+
+<div class="hero-unit center">
+<p id="notice"><%= notice %></p>
+
+<p><strong><%= @payment_info.title.html_safe %></strong></p>
+<p><%= @payment_info.text.html_safe %></p>
+
+<% if sign_in_admin? || sign_in_editor? %>
+  <%= link_to 'Редактировать', edit_payment_info_path(@payment_info) %> |
+  <%= link_to 'Назад', payment_infos_path %>
+<% end %>
+</div>

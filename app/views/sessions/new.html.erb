@@ -1,0 +1,20 @@
+<% provide(:title, "Войти на сайт") %>
+<div class=" hero-unit">
+<h1>Вход на сайт</h1>
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :"Пароль" %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Войти", class: "btn btn-large btn-primary" %>
+    <% end %>
+
+    <p>Если вы еще не зарегистрированы, вы можете перейти на форму регистрации <%= link_to "Зарегистрироваться!", signup_path %></p>
+  </div>
+</div>
+</div>

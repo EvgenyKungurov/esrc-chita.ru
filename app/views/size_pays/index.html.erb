@@ -1,0 +1,30 @@
+<div class="hero-unit center">
+<p id="notice"><%= notice %></p>
+
+<h1>Размеры выплат</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @size_pays.each do |size_pay| %>
+      <tr>
+        <td><%= link_to size_pay.name.html_safe, size_pay %></td>
+        <% if sign_in_admin? || sign_in_editor? %>
+          <td><%= link_to 'Редактировать', edit_size_pay_path(size_pay) %></td>
+          <td><%= link_to 'Удалить', size_pay, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<% if sign_in_admin? || sign_in_editor? %>
+  <%= link_to 'Добавить', new_size_pay_path %>
+<% end %>  
+</div>

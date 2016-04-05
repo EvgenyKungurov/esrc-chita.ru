@@ -1,0 +1,2 @@
+module SizePaysHelper
+end

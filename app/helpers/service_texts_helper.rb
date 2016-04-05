@@ -1,0 +1,2 @@
+module ServiceTextsHelper
+end

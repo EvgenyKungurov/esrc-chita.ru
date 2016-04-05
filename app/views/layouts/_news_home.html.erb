@@ -1,0 +1,11 @@
+<div id="container">
+  <%= image_tag 'rf.jpg', class: 'img' %>
+    <div class="content">
+      <% @article.each do |elem| %>
+        <div class="date"><%= elem.created_at.localtime.strftime("%d-%m-%Y %H:%M") %></div>
+        <div class="title"><%= link_to elem.title.html_safe, article_path(elem), class: "href" %></div>
+      <% end %>
+      <%= link_to "Все новости", articles_path, class: "href" %>
+    </div>
+</div>
+
