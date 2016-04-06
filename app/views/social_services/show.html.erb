@@ -14,7 +14,7 @@
     <% end %>
   </ul>
   </p>
-  <% if current_user && sign_in_admin? %>
+  <% if sign_in_admin? || sign_in_editor? %>
     <%= link_to 'Добавить', new_social_post_path(@social_service) %>
     <%= link_to 'Редактировать', edit_social_service_path(@social_service) %>
   <% end %>
