@@ -17,7 +17,7 @@
     <%= f.label :Текст, class: :title %>
     <%= f.cktext_area :text, :ckeditor => {:height => '50'} %>
 
-    <%= f.hidden_field :social_service_id, :value => params[:format]  %>
+    <%= f.hidden_field :social_service_id, :value => params[:id]  %>
 
   <div class="actions">
     <%= f.submit :Сохранить %>

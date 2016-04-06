@@ -3,7 +3,7 @@ class SocialPostsController < ApplicationController
   before_action :sign_in_admin, only: [:new, :create, :update, :destroy]
 
   def index
-    @social_posts = SocialPost.all
+    @social_posts = SocialPost.select { |post| post.social_service_id == params[:id].to_i }
   end
 
   def show
@@ -34,7 +34,7 @@ class SocialPostsController < ApplicationController
   end
 
   def destroy
-    redirect_to @social_post if @social_post.destroy
+    redirect_to social_posts_path(id: params[:social_service_id]) if @social_post.destroy
   end
 
   private
