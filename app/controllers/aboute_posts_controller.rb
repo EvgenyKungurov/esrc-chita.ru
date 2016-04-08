@@ -1,6 +1,6 @@
 class AboutePostsController < ApplicationController
   before_action :set_aboute_post, only: [:show, :edit, :update, :destroy]
-  before_action :sign_in_admin, only: [:edit, :update, :destroy]
+  before_action :sign_in_admin, only: [:create, :edit, :update, :destroy]
 
   def index
     @aboute_posts = AboutePost.where(aboute_id: params[:aboute_id].to_i)
