@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :aboute_posts
   resources :social_posts
   resources :size_pays
   resources :social_services

@@ -3,7 +3,7 @@ class SocialPostsController < ApplicationController
   before_action :sign_in_admin, only: [:new, :create, :update, :destroy]
 
   def index
-    @social_posts = SocialPost.select { |post| post.social_service_id == params[:id].to_i }
+    @social_posts = SocialPost.where(social_service_id: params[:id].to_i)
   end
 
   def show

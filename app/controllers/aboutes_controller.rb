@@ -16,10 +16,10 @@ class AboutesController < ApplicationController
 	def create
 		@aboute = Aboute.new(service_params)
 		if @aboute.save
-    redirect_to @aboute
-  		else
-    render 'new'
-  		end
+    	redirect_to @aboute
+  	else
+    	render 'new'
+  	end
 	end
 
 	def show
