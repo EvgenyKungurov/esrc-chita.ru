@@ -1,0 +1,17 @@
+<div class="hero-unit">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <center style="color:blue;"><strong>Заголовок</strong>
+  <%= @balance_information.title.html_safe %></center>
+</p>
+
+<p>
+  <%= @balance_information.content.html_safe %>
+</p>
+
+<% if sign_in_admin? || sign_in_editor? %>
+  <%= link_to 'Редактировать', edit_balance_information_path(@balance_information) %> |
+<% end %>
+<%= link_to 'Назад', balance_informations_path %>
+</div>
