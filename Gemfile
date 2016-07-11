@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'factory_girl_rails', '4.2.1'
 gem 'faker', '1.1.2'
+gem 'carrierwave'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
