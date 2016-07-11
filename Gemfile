@@ -14,6 +14,7 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'factory_girl_rails', '4.2.1'
 gem 'faker', '1.1.2'
 gem 'carrierwave'
+gem 'mini_magick'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
