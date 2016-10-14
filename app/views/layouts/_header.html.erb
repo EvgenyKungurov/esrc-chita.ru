@@ -9,7 +9,7 @@
          </div>
 
           <nav>
-            <ul class="nav pull-right">
+            <ul class="nav navbar-nav">
               <li><%= link_to "Главная", root_path %></li>
               <li><%= link_to "Структурные подразделения", filials_path  %></li>
 
@@ -53,8 +53,8 @@
                   </ul>
                 </li>
               <% else %>
-                <%= link_to "Вход", signin_path, class: "btn btn-large btn-primary" %>
-                <%= link_to "Регистрация", signup_path, class: "btn btn-large btn-primary" %>
+                <%= link_to "Вход", signin_path, class: "btn btn-success" %>
+                <%= link_to "Регистрация", signup_path, class: "btn btn-success" %>
               <% end %>
             </ul>
           </nav>

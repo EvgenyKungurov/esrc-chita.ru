@@ -1,15 +1,12 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'responders', '2.0'
 gem 'rails', '4.2.1'
 gem 'ckeditor', github: 'galetahub/ckeditor'
-#gem 'ckeditor'
 gem 'capistrano'
 gem 'paperclip'
-gem 'bootstrap-sass', '2.3.2.0'
-#gem 'bootstrap-sass', '3.3.4.1'
+gem 'bootstrap-sass', '3.3.6'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'factory_girl_rails', '4.2.1'
 gem 'faker', '1.1.2'
@@ -21,7 +18,7 @@ gem 'pg'
 gem 'rspec-rails', '2.13.1'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -41,10 +38,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+gem 'spring', group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

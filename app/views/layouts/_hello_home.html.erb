@@ -1,27 +1,21 @@
+<div class="row">
+  <div class="col-md-4 col-sm-6">
+    <div class="alert alert-success" role="alert"><h3 class="center_align">Информация</h3></div>
+      <p>Предложения и замечания по работе сайта просим отправлять на электронный адрес: kungurov@esrc-zbp.ru</p>
+      <hr class="hr_success">
+      <p>Для того, что бы задать вопрос, вам необходимо зайти в личный кабинет.</p>
+      <hr class="hr_success">
+      <p>Кнопка личный кабинет появляется в меню автоматически после регистрации и входа на сайт</p>
+      <hr class="hr_success">
+      <p>Документы на предоставление мер социальной поддержки в том числе в субботние дни можно предоставлять в филиалы ГКАУ "МФЦ".</p>
+      <%= link_to "Перейти к календарю", 'http://www.mfc-chita.ru/filial/chita/calendar/day/', target: "_blank", class: "btn btn-success btn-lg", role: "button" %>
+    </div>
 
-<div id="mail">
-  <%= image_tag("phone-s1.png", :width => '45%') %>
-  </br>
-  <span class="basecolor_2" style="font-size:20px; font-weight:bold; margin:11px 0; letter-spacing:-1px; text-align:center; display:block;color:#33749f"> Мы будем рады услышать вас!</span>
-  <p style="text-align:center;color:#33749f"> Если вы захотите связаться с нами <span class="basecolor_2" style="display:block; font-size:24px; letter-spacing:-1px; font-weight:bold;  margin:10px 0 8px 0; text-align:center;color:#33749f">Телефоны горячей линии по г.Чита:<br> 35-07-23; 35-07-28; 35-07-34
-
-</span> </p>
-
-  <p style="text-align:center;color:#33749f"> Так же вы можете написать обращение на электронный адрес: general_esrc@esrc-zbp.ru <br> или задать вопрос в личном кабинете.</p>
-</div>
-<div id="answer">
-  <p id="ugol2">Информация</p>
-  <%= image_tag("thumb_47417317.jpg", :style => "width:20%;float:right;") %>
-  <p style="color:#33749f">Для того, что бы задать вопрос, вам необходимо зайти в личный кабинет. </br> Кнопка личный кабинет появляется в меню автоматически после регистрации и входа на сайт.</p>
-  <p style="color:#33749f">
-    Сайт находится в тестовом режиме, если у вас что-то не работает, можете отправить письмо с описание проблемы на kungurov@esrc-zbp.ru
-  </p>
-  <div style="width: 400px;float:left">
-    <p style="color:#33749f">
-      Документы на предоставление мер социальной поддержки в том числе в субботние дни можно предоставлять в филиалы ГКАУ "МФЦ".
-      Нажмите на картинку мои документы, чтобы перейти к графику работы ГКАУ "МФЦ"
-    </p>
+  <div class="col-md-4 col-sm-6">
+    <div class="alert alert-info" role="alert"><h3 class="center_align">Контакты</h3></div>
+      <p> Мы будем рады услышать вас!
+      <%= image_tag("phone-s1.png", :width => '25%') %>
+      Телефоны горячей линии по г.Чита:<br> 35-07-23; 35-07-28; 35-07-34<br> 
+      Так же вы можете написать обращение на электронный адрес: general_esrc@esrc-zbp.ru <br> или задать вопрос в личном кабинете.</p>
   </div>
-   <%= link_to image_tag("mydoc.jpg", size: "140x52"), 'http://www.mfc-chita.ru/filial/chita/calendar/day/', target: "_blank" %>
 </div>
-</br>

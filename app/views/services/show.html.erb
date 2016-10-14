@@ -4,7 +4,8 @@
 <% end %>
 
 <div class="hero-unit center">
-   <ul id="nav_list_first" class="nav_list">
+  <div class="row">
+    <ul id="nav_list_first" class="nav_list">
 
      <% @service.sort_by {|x| x.created_at }.each do |elem| %>
         <li><a href="#"><%= elem.title.html_safe %></a>
@@ -22,4 +23,5 @@
   <%= link_to 'Добавить запись', new_servicetext_path(params[:id]) %>
   <%= link_to 'Редактировать', servicetexts_path(params[:id]) %>
   <% end %>
+  </div>
 </div>

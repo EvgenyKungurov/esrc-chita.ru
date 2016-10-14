@@ -10,13 +10,11 @@
           <td><p><%= link_to 'Редактировать', edit_aboute_post_path(aboute_post, aboute_id: params[:aboute_id]) %></td></p>
           <td><p><%= link_to 'Удалить', aboute_post_path(aboute_post, aboute_id: params[:aboute_id]),
             method: :delete, data: { confirm: 'Вы уверены?' } %></td></p>
+            <%= link_to 'Добавить', new_aboute_post_path(aboute_id: params[:aboute_id]) %>
         <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to 'Добавить', new_aboute_post_path(aboute_id: params[:aboute_id]) %>
 </div>
