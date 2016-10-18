@@ -21,8 +21,6 @@ module SiteEsrc
   config.time_zone = 'Krasnoyarsk'
   config.active_record.default_timezone = :local
   config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-  #config.assets.precompile += %w( jquery.rambling.slider.js )
-  #config.assets.precompile += %w( jquery.rambling.slider.css )
-  config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+  config.assets.precompile += %w(ckeditor/*)
   end
 end
