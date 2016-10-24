@@ -1,2 +1,0 @@
-module ServiceTextsHelper
-end

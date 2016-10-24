@@ -22,5 +22,6 @@ module SiteEsrc
   config.active_record.default_timezone = :local
   config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   config.assets.precompile += %w(ckeditor/*)
+  config.assets.precompile += Ckeditor.assets
   end
 end
